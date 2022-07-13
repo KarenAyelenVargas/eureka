@@ -1,10 +1,10 @@
 let seguir: boolean = true;
 let contador: number = 1;
-let contraseña: string;
+let contrasenia: string="";
 
 while (seguir === true && contador < 4) {
-  contraseña = prompt("Ingrese su contraseña " + contador + " intento");
-  if (contraseña === "eureka") {
+  contrasenia = String(prompt("Ingrese su contraseña " + contador + " intento"));
+  if (contrasenia === "eureka") {
     console.log("La contraseña es correcta");
     seguir = false;
   } else {
